@@ -14,6 +14,7 @@ export const BreedsSelect=(props)=>{
   
   return(
     <select name="whichBreed">
+      <option value="default">犬種を選んでね</option>
       {selectOptions}
     </select>
   )
