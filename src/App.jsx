@@ -4,12 +4,14 @@
 import './App.css'
 import { useState } from 'react'
 
-/**
- * @type {() => JSX.Element}
- */
+/** 
+ @type {() => JSX.Element}
+*/
 export const App = () => {
   var [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
-  const renew=()=>{setDogUrl(dogUrl="https://images.dog.ceo/breeds/mountain-swiss/n02107574_1032.jpg")};
+  var next;
+  var fetch("https://dog.ceo/dog-api/documentation/random").then(response => response.text()).then(data => {next=data["message"]});
+  var renew=()=>{setDogUrl(dogUrl=next)};
   return (
     <body>
       <header className="header">
