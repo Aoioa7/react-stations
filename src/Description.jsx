@@ -1,6 +1,6 @@
 // @ts-check
 import {dogUrl} from './DogImage'
-import renew from './DogImage'
+import {renew} from './DogImage'
 
 export const Description = () => {
   return (
