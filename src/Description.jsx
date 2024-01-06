@@ -15,3 +15,4 @@ export const Description =()=> {
     </main>
   );
 }
+export default Description
