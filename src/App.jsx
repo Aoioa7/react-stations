@@ -8,7 +8,7 @@ import { useState } from 'react'
  * @type {() => JSX.Element}
  */
 export const App = () => {
-  [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
+  var [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
   const renew=()=>{setDogUrl(dogUrl="https://images.dog.ceo/breeds/mountain-swiss/n02107574_1032.jpg")};
   return (
     <body>
