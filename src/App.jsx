@@ -15,8 +15,6 @@ export const App = () => {
         <p>"ワンちゃんの画像を表示するサイト！"</p> 
         <img src="https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg"/>
       </main>
-    </body>
-
-    
+    </body>  
   )
 }
