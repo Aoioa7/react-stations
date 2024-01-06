@@ -9,6 +9,7 @@ import { useState } from 'react'
  */
 export const App = () => {
   const [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
+  const renew=()=>{setDogUrl(dogUrl="https://images.dog.ceo/breeds/mountain-swiss/n02107574_1032.jpg")};
   return (
     <body>
       <header className="header">
@@ -16,6 +17,7 @@ export const App = () => {
       </header>
       <main>
         <p>"ワンちゃんの画像を表示するサイト！"</p> 
+        <button onClick={renew}>" 画像を更新しよう！"</button>
         <img src={dogUrl}/>
       </main>
     </body>  
