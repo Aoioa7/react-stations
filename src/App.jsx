@@ -5,10 +5,24 @@
 import './App.css'
 import React,{ useState } from 'react'
 
+import Header from './Header'
+import Description from './Description'
+
 /** 
  @type {() => JSX.Element}
 */
-export const App = () => {
+
+export const App=()=>{
+  return(
+      <div>
+        <Header/>
+        <Description/>
+      </div>
+  );
+}
+
+
+/*export const App = () => {
   var [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
   var renew = () => fetch("https://dog.ceo/api/breeds/image/random",{method:'GET'}).then(response => response.json()).then(data => {setDogUrl(data["message"])});
 
@@ -24,4 +38,4 @@ export const App = () => {
       </main>
     </body>  
   )
-}
+}*/
