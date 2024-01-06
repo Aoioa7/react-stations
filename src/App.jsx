@@ -1,6 +1,6 @@
 // DO NOT DELETE
 
-import { s } from 'vitest/dist/reporters-cb94c88b'
+import { s } from '../node-modules/vitest/dist/reporters-cb94c88b'
 
 import './App.css'
 import React,{ useState } from 'react'
