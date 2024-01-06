@@ -3,7 +3,7 @@
 //import { s } from 'vitest/dist/reporters-cb94c88b.d.ts'
 
 import './App.css'
-import React,{ useState } from 'react'
+import React from 'react'
 
 import Header from './Header'
 import Description from './Description'
