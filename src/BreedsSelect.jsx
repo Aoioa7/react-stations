@@ -1,7 +1,7 @@
 // @ts-check
 
 // @ts-ignore
-dogList=[]
+var dogList=[]
 
 export const BreedsSelect=(props,dogList)=>{
   for(let i=0;i<props.breeds.length;i++){
