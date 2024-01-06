@@ -4,9 +4,9 @@ import {useEffect} from 'react'
 
 export const DogListContainer = () => {
 
-  var [breeds,setBreeds] =useState([""])
+  var [breeds,setBreeds] =useState([])
   var getBreeds=()=>{
-    fetch("https://dog.ceo/api/breeds/list/all",{method:'GET'})
+    fetch("https://dog.ceo/api/breeds/list/all")
     .then(response => response.json())
     .then(data => setBreeds(data.message))
   }
@@ -14,9 +14,7 @@ export const DogListContainer = () => {
   useEffect(()=>{getBreeds},[])
 
   return (
-    <footer>
-
-    </footer>
+    <footer></footer>
   )
 }
 
