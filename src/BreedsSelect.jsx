@@ -1,15 +1,18 @@
 // @ts-check
 
 // @ts-ignore
-var dogList=[]
-
-export const BreedsSelect=(props,dogList)=>{
-  for(let i=0;i<props.breeds.length;i++){
-    dogList.push('<option value={i}>{props.breeds[i]}</option>')
+const selectOptions=props.breeds.map(
+  (breed)=>{
+    return <option value={breed}>{breed}</option>
   }
+)
+
+
+export const BreedsSelect=(props)=>{
+  
   return(
     <select name="whichBreed">
-      {dogList}
+      {selectOptions}
     </select>
   )
 }
