@@ -6,9 +6,11 @@ import {useEffect} from 'react'
 export const DogListContainer = () => {
 
   const [breeds,setBreeds] =useState([])
-  var getBreeds=()=>{fetch("https://dog.ceo/api/breeds/list/all").then(response => response.json()).then(data => setBreeds(data.message))}
+  useEffect(()=>{
+    fetch("https://dog.ceo/api/breeds/list/all").then(response => response.json())
+    .then(data => setBreeds(data.message)).then(console.log(breeds))
 
-  useEffect(()=>{getBreeds},[])
+  },[])
 
   return (
     <footer></footer>
