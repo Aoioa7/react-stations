@@ -1,15 +1,13 @@
 // DO NOT DELETE
-
 //import { s } from 'vitest/dist/reporters-cb94c88b.d.ts'
 
 import './App.css'
-import React from 'react'
 
 import Header from './Header'
-import Description from './Description'
+import {Description} from './Description'
 
 /** 
- @type {() => JSX.Element}
+ *@type {() => JSX.Element}
 */
 
 export const App=()=>{
@@ -18,9 +16,8 @@ export const App=()=>{
         <Header/>
         <Description/>
       </div>
-  );
+  )
 }
-export default App
 
 
 /*export const App = () => {
