@@ -3,13 +3,15 @@ import {useState} from 'react'
 import {useEffect} from 'react'
 
 export const DogListContainer = () => {
+
   var [breeds,setBreeds] =useState([""])
   var getBreeds=()=>{
     fetch("https://dog.ceo/api/breeds/list/all",{method:'GET'})
     .then(response => response.json())
-    .then(data => setBreeds(Object.keys(data.message)))
+    .then(data => setBreeds(data.message))
   }
-  useEffect(()=>{getBreeds})
+
+  useEffect(()=>{getBreeds},[])
 
   return (
     <footer>
