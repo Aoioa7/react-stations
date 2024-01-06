@@ -10,7 +10,7 @@ import { useState } from 'react'
 export const App = () => {
   var [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg");
   var next;
-  fetch("https://dog.ceo/dog-api/documentation/random").then(response => response.text()).then(data => {next=data["message"]});
+  fetch("https://dog.ceo/api/breeds/image/random").then(response => response.text()).then(data => {next=data["message"]});
   var renew=()=>{setDogUrl(dogUrl=next)};
   return (
     <body>
