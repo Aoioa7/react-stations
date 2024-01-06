@@ -1,11 +1,13 @@
 // @ts-check
 
 // @ts-ignore
-const selectOptions=props.breeds.map(
-  (breed)=>{
+const selectOptions=(props)=>{
+  props.breeds.map(
+    (breed)=>{
     return <option value={breed}>{breed}</option>
-  }
-)
+    }
+  )
+}
 
 
 export const BreedsSelect=(props)=>{
