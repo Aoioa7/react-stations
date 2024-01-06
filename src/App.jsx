@@ -19,7 +19,7 @@ export const App = () => {
       </header>
       <main>
         <p>"ワンちゃんの画像を表示するサイト！"</p> 
-        <button onClick={renew}>" 画像を更新しよう！"</button>
+        <button className="button" onClick={renew}>" 画像を更新しよう！"</button>
         <img src={dogUrl}/>
       </main>
     </body>  
