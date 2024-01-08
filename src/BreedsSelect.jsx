@@ -5,14 +5,14 @@ import {useState} from 'react'
 
 export const BreedsSelect=(props)=>{
   // @ts-ignore
-  const selectOptions=(props)=>{
+  const selectOptions=
     props.breeds.map(
       // @ts-ignore
       (breed)=>{
       return <option value={breed}>{breed}</option>
       }
     )
-  }
+  
 
 
   var[selected,setSelected]=useState('');
