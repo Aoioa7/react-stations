@@ -18,13 +18,13 @@ export const BreedsSelect=(props)=>{
   var[selected,setSelected]=useState('');
   // @ts-ignore
   const handleChange=e=>{
-    setSelected(e.targrt.value)
+    setSelected(e.target.value)
   } ;
 
   return (
     <div>
       <select value={selected} onChange={handleChange}>
-        <option value="default">犬種を選んでね</option>
+        <option value="">犬種を選んでね</option>
         {selectOptions};
       </select>
     </div>
