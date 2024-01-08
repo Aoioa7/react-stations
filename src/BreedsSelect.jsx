@@ -2,17 +2,21 @@
 import {useState} from 'react'
 
 // @ts-ignore
-const selectOptions=(props)=>{
-  props.breeds.map(
-    (breed)=>{
-    return <option value={breed}>{breed}</option>
-    }
-  )
-}
+
+export const BreedsSelect=(props)=>{
+  // @ts-ignore
+  const selectOptions=(props)=>{
+    props.breeds.map(
+      // @ts-ignore
+      (breed)=>{
+      return <option value={breed}>{breed}</option>
+      }
+    )
+  }
 
 
-export const BreedsSelect=()=>{
   var[selected,setSelected]=useState('');
+  // @ts-ignore
   const handleChange=e=>{
     setSelected(e.targrt.value)
   } ;
@@ -21,7 +25,7 @@ export const BreedsSelect=()=>{
     <div>
       <select value={selected} onChange={handleChange}>
         <option value="default">犬種を選んでね</option>
-        {selectOptions}
+        selectOptions;
       </select>
     </div>
   )
