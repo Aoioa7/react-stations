@@ -25,7 +25,7 @@ export const BreedsSelect=(props)=>{
     <div>
       <select value={selected} onChange={handleChange}>
         <option value="default">犬種を選んでね</option>
-        selectOptions;
+        {selectOptions};
       </select>
     </div>
   )
