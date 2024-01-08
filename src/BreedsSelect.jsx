@@ -6,11 +6,11 @@ import {useState} from 'react'
 export const BreedsSelect=(props)=>{
   // @ts-ignore
   const selectOptions=
-    props.breeds.map(
+    Object.keys(props.breeds).map(
       // @ts-ignore
-      (breed)=>(
-       <option value={breed}>{breed}</option>
-    )
+      (breed)=>{
+       return <option value={breed}>{breed}</option>
+      }
     )
   
 
