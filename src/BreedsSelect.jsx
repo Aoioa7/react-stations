@@ -8,9 +8,9 @@ export const BreedsSelect=(props)=>{
   const selectOptions=
     props.breeds.map(
       // @ts-ignore
-      (breed)=>{
-      return <option value={breed}>{breed}</option>
-      }
+      (breed)=>(
+       <option value={breed}>{breed}</option>
+    )
     )
   
 
